@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+  }
+  * ::selection{
+    color: white;
+     background-color: black;
+
+}
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
+  body{
+    background-color: #F7F7F7;
+  }
+  #nav{
+    height: 120px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 99;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+  }
+  #nav .nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+  }
+  
+  #nav-part2 #links a{
+    text-decoration: none;
+    color: rgb(78, 67, 67);
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 80px;
+  }
+  #icons{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #fff;
+  }
+
+  #nav-part2 #icons i{
+    font-size: 18px;
+    margin-right: 50px;
+    font-weight: 100;
+  }
+  #cursor{
+    height:100px;
+    width:100px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    position: fixed;
+    transform: scale(0);
+  }
+  #page1{
+    min-height: 100vh; 
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    padding-top: 21vh;
+    padding: 0, 1vw;
+}
+#page1 h1{
+    font-size: 16vw;
+    font-family: 'Futura';
+    text-transform: uppercase;
+    line-height: 14vw;
+    letter-spacing: -15px;
+    margin: 1.4vw 1.4vw;
+
+}
+#video-container{
+    height: 100vh;
+    width: 100%;
+    background-color: gray;
+    margin-top: 1vw;
+    position: relative;
+}
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover ;
+}
+#video-container #play{
+    background-color: black;
+    padding: 3vw 2.2vw;
+    color: #fff;
+    font-size: 2vw;
+    position: fixed;
+    text-transform: uppercase;
+    font-family: "futura";
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+}
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    background-color:wheat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3vw 1vw;
+    justify-content: space-between;
+}
+#page2 .elem{
+    height:100% ;
+    width: 30%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    overflow: hidden;
+}
+#page2 .elem img{
+    height: 100% ;
+    width: 100%;
+    scale: 1.2;
+    object-fit: cover;
+}
+#page2 .elem .dets{
+    height:60px;
+    border-radius: 50px;
+    width:70%;
+    position: absolute;
+    z-index: 9;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: palegoldenrod;
+}
+
+#page3{
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap ;
+    background-color: rgb(232, 232, 224);
+}
+.child{
+    height:55vh;
+    width:40vw;
+    margin-bottom: 1vw;
+    /* background-color: red; */
+    /* border:3px solid #000; */
+    position: relative;
+    
+
+}
+.child img{
+    height: 100%;
+    width:100%;
+
+}
+
+#page4{
+    height:100vh;
+    width: 100%;
+    background-color: white;
+}
+@media (max-width:600px) {
+   
+    #page1{
+       
+        width: 100%;
+        padding-top: 21vh;
+        padding: 0, 3vw;
+    } 
+  #page1 h1{
+    font-size: 16vw;
+    line-height: 14vw;
+    letter-spacing: -2px;
+  }
+
+  #video-container{
+    height: 35vh;
+    
+    margin-top: 3vw;
+   
+}
+#video-container #play{
+    padding: 9vw 7.2vw;
+    font-size: 4vw;
+    position: absolute;
+    text-transform: uppercase;
+   top: 50%;
+   left:50%;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    scale: 1;
+}
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    background-color:wheat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3vw 1vw;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#page2 .elem{
+    height:100vh ;
+    width: 100%;
+    margin-bottom: 1vw ;
+    /* background-color: red; */
+    overflow: hidden;
+}
+#page2 .elem img{
+    height: 100% ;
+    width: 100%;
+    scale: 1.2;
+    object-fit: cover;
+}  
+
+#page2 .elem .dets{
+    height:40px;
+    border-radius: 50px;
+    width:70%;
+    position: absolute;
+    z-index: 9;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: palegoldenrod;
+}
+
+
+}
